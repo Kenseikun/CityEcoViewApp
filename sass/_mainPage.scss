@@ -24,6 +24,10 @@ left: 0;
          border-radius: 50%;
          position: relative;
          animation: scaling 2s ease-in-out infinite;
+         cursor: pointer;
+         display: block;
+         text-decoration: none;
+         color: black;
      }
 
      .dot:nth-child(1){

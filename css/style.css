@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .section_main {
@@ -45,6 +45,7 @@ body {
   font-weight: 100;
   margin: 0px auto 15px auto;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .section_main .main_form {
@@ -83,8 +84,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   font-size: 15px;
   background-color: #15e8d3;
 }
@@ -96,7 +97,7 @@ body {
   border-bottom: 1px solid #707070;
   background-color: transparent;
   padding-left: 5px;
-  width: 300px;
+  width: 280px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   font-size: 16px;
@@ -124,8 +125,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   font-size: 15px;
   background-color: #15e8d3;
 }
@@ -137,7 +138,7 @@ body {
   border-bottom: 1px solid #707070;
   background-color: transparent;
   padding-left: 5px;
-  width: 300px;
+  width: 280px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   font-size: 16px;
@@ -263,6 +264,10 @@ body {
   position: relative;
   -webkit-animation: scaling 2s ease-in-out infinite;
           animation: scaling 2s ease-in-out infinite;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
 .main_dots .dot:nth-child(1) {

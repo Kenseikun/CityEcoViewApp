@@ -25,6 +25,7 @@
         font-weight: 100;
         margin: 0px auto 15px auto;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .main_form{
@@ -41,8 +42,9 @@
         i{
                @include iBtn;
             }
+        
         input{
-         @include inputs;
+               @include inputs;
            }
        }
 
