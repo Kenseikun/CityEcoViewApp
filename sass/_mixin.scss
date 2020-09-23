@@ -1,0 +1,26 @@
+@mixin iBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 60px;
+    width: 60px;
+    font-size: 15px;
+    background-color: $mainCol;
+}
+
+@mixin inputs {
+    color: gray;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    background-color: transparent;
+    padding-left: 5px;
+    width: 300px;
+    transition: 0.6s;
+    font-size: 16px;
+    &:focus{
+        border-bottom: 1px solid $mainCol;
+        color: white;
+    }
+   }

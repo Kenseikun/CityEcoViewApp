@@ -1,0 +1,134 @@
+.section_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
+    height: 100vh;
+
+    font-family: $font;
+    color: white;
+
+
+    .main_logo{
+        height: 25%;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    h2{
+        margin: 0px auto 30px auto;
+        font-size: 2.5em;
+    }
+
+    h1{
+        font-size: 16px;
+        font-weight: 100;
+        margin: 0px auto 15px auto;
+        text-transform: uppercase;
+    }
+
+    .main_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #576578;
+        width: 100%;
+
+       .input_container{
+           margin-bottom: 10px;
+           display: flex;
+        i{
+               @include iBtn;
+            }
+        input{
+         @include inputs;
+           }
+       }
+
+       .password_container{
+        display: flex;
+        i{
+            @include iBtn;
+         }
+        input{
+            @include inputs;
+
+           &:focus{
+               border-bottom: 1px solid $mainCol;
+               color: white;
+           }
+        }
+       }
+
+       .btn_login {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-decoration: none;
+           background-image: linear-gradient(to right, #15e8d3, #00dcd6, #00cfd7, #00c2d6, #01b5d1);
+           border: none;
+           color: white;
+           padding: 20px 40px;
+           width: 200px;
+           border-radius: 5px;
+           margin: 20px auto 5px auto;
+           font-size: 20px;
+           font-weight: 300;
+           cursor: pointer;
+           transition: 0.5s;
+
+      &:hover {
+          opacity: 0.8;
+      }
+       }
+
+    .a_forgot{
+        color: gray;
+        font-weight: 300;
+        text-decoration: none;
+        font-size: 18px;
+
+        &:hover{
+            color: white;
+        }
+    }
+
+    .btn_fb {
+        background-color: $fbCol;
+    }
+
+    .btn_gmail {
+        background-color: $gmailCol;
+    }
+
+    .btn_fb, .btn_gmail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto 5px auto;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        width: 300px;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+        
+
+    }
+
+    .btn_fb img, .btn_gmail img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .or {
+        color: white;
+    }
+}
+}
