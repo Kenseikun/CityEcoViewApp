@@ -240,6 +240,7 @@ body {
   background-image: url(../images/maps.jpg);
   position: relative;
   font-family: "Raleway", sans-serif;
+  overflow: hidden;
 }
 
 .main_logo-image {
