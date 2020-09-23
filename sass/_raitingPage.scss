@@ -1,0 +1,72 @@
+.rating_container{
+    font-family: $font;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
+position: relative;
+}
+
+.back_btn{
+position: absolute;
+top: 10px;
+left: 10px;
+color: #DCAE1D;
+font-size: 2.5em;
+text-shadow: 1px 1px 2px black;
+text-decoration: none;
+}
+
+.raiting_container-top{
+ height: 80vh;
+.raiting_img-top{
+    width: 100%;
+ }
+ .raiting_name{
+     font-size: 25px;
+     padding: 5px 0;
+     color: white;
+     margin-left: 20px;
+ }
+}
+
+.rate_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+
+    box-shadow: 0px -10px 50px 10px rgba(50, 50, 50, 0.64);
+    
+    .rate_progress{ 
+        height: 150px;
+           }
+    .rate_container-score{
+     font-size: 20px;
+     p {
+     position: relative;
+     margin-bottom: 15px;
+
+     &::before{
+         content: '';
+         width: 20px;
+         height: 4px;
+         position: absolute;
+         bottom: -8px;
+         left:0;
+         
+        }
+        &:nth-child(1)::before{
+            width: 80px;
+            background-color: $mainCol;
+        }
+        &:nth-child(2)::before{
+            width: 40px;
+            background-color: #DCAE1D;
+        }
+        &:nth-child(3)::before{
+            width: 10px;
+            background-color: #7A9D96;
+        }
+     }
+    
+    }
+}

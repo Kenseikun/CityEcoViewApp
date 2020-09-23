@@ -538,4 +538,88 @@ body {
     opacity: 0.7;
   }
 }
+
+.rating_container {
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#466b9f), color-stop(#43628f), color-stop(#3f597f), color-stop(#3b5070), to(#374761));
+  background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
+  position: relative;
+}
+
+.back_btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #DCAE1D;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+}
+
+.raiting_container-top {
+  height: 80vh;
+}
+
+.raiting_container-top .raiting_img-top {
+  width: 100%;
+}
+
+.raiting_container-top .raiting_name {
+  font-size: 25px;
+  padding: 5px 0;
+  color: white;
+  margin-left: 20px;
+}
+
+.rate_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px -10px 50px 10px rgba(50, 50, 50, 0.64);
+          box-shadow: 0px -10px 50px 10px rgba(50, 50, 50, 0.64);
+}
+
+.rate_container .rate_progress {
+  height: 150px;
+}
+
+.rate_container .rate_container-score {
+  font-size: 20px;
+}
+
+.rate_container .rate_container-score p {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.rate_container .rate_container-score p::before {
+  content: '';
+  width: 20px;
+  height: 4px;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.rate_container .rate_container-score p:nth-child(1)::before {
+  width: 80px;
+  background-color: #15e8d3;
+}
+
+.rate_container .rate_container-score p:nth-child(2)::before {
+  width: 40px;
+  background-color: #DCAE1D;
+}
+
+.rate_container .rate_container-score p:nth-child(3)::before {
+  width: 10px;
+  background-color: #7A9D96;
+}
 /*# sourceMappingURL=style.css.map */
