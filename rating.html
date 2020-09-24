@@ -30,11 +30,19 @@
             </div>
 
             <div class="rate_thumbs-container">
-                <button class="thumbs"><i class="far fa-thumbs-up"></i></button>
-                <button class="thumbs"><i class="far fa-hand-paper"></i></button>
-                <button class="thumbs"><i class="far fa-thumbs-down"></i></button>
+                <button class="thumbs thumb_first" data-modal-target="#modal"><i
+                        class="rate_btn far fa-thumbs-up"></i></button>
+                <button class="thumbs"><i class="rate_btn far fa-hand-paper"></i></button>
+                <button class="thumbs"><i class="rate_btn far fa-thumbs-down"></i></button>
             </div>
+
         </section>
+
+        <div class="modal" id="modal">
+            <a href="rating.html" class="modal_close">&times;</a>
+            <div class="modal_star"><i class="far fa-star"></i></div>
+            <p class="modal_text">You earn <span>5</span> poinsts!</p>
+        </div>
 
         <div class="rate_img-container">
             <img src="images/rest/01.jpg" alt="" class="rate_img">
@@ -51,7 +59,7 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="ratingScript.js"></script>
 </body>
 
 </html>

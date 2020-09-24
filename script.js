@@ -7,5 +7,7 @@ const mainMenu = document.querySelector(".main_menu");
 arrow.addEventListener("click", () => {
     arrow.classList.toggle("rotation");
     mainContainer.classList.toggle("animate");
-})
+});
+
+
 
