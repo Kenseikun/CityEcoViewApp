@@ -656,6 +656,14 @@ body {
   font-size: 50px;
   color: white;
   font-weight: 100;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.rate_thumbs-container .thumbs:hover {
+  opacity: 0.8;
 }
 
 .rate_thumbs-container .thumbs:nth-child(1) {
@@ -678,5 +686,27 @@ body {
   background-color: #d44638;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.rate_img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4px;
+  margin: 10px 0 0 0;
+}
+
+.rate_img-container .rate_img {
+  height: 120px;
+  -ms-flex-wrap: 1;
+      flex-wrap: 1;
 }
 /*# sourceMappingURL=style.css.map */

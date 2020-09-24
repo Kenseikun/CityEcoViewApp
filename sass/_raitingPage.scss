@@ -3,6 +3,7 @@
     min-height: 100vh;
     background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
     position: relative;
+
 }
 
 .back_btn{
@@ -90,6 +91,13 @@ margin: 10px auto;
     font-size: 50px;
     color: white;
     font-weight: 100;
+    outline: none;
+    cursor: pointer;
+    transition: 0.6s;
+
+    &:hover{
+        opacity: 0.8;
+    }
 
     &:nth-child(1){
         flex:1;
@@ -106,6 +114,19 @@ margin: 10px auto;
         background-color: $gmailCol;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+        }
     }
 }
+
+.rate_img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 10px 0 0 0 ;
+   .rate_img{
+       height: 120px;
+       flex-wrap: 1;
+   }
 }
