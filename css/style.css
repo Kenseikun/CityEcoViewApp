@@ -1033,9 +1033,6 @@ input[type=text] {
   .modal .modal_star {
     font-size: 150px;
   }
-  .rate_img-container {
-    margin: 30px auto;
-  }
 }
 
 @media (max-width: 375px) {
@@ -1044,9 +1041,6 @@ input[type=text] {
   }
   .section_main h2 {
     font-size: 2em;
-  }
-  .rate_img-container {
-    margin: 40px auto;
   }
   .rate_img-container .rate_img {
     height: 100px;
