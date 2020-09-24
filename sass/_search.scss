@@ -11,18 +11,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    box-shadow: 0 4px 2px -2px gray;
     outline: none;
     border: none;
 }
 
 input[type=text]{
     text-align: center;
-    width: 100%;
+    width: 60%;
     height: 50px;
     outline: none;
     border: none;
+
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .search_filter{
+        display: block;
+        color: white;
+        text-decoration: none;
+        background-color: $fbCol;
+        padding: 3px 6px;
+        margin: 5px 0 2px 0;
+        font-size: 14px;
     }
 
     .search_select-container{
@@ -87,6 +97,15 @@ input[type=text]{
     margin: 10px;
     padding: 5px 0;
     background-color: rgba(0,0,0,0.3);
+
+    .search_link{
+        position: absolute;
+        display: block;
+        height: 60px;
+        width: 95%;
+        cursor: pointer;
+        background-color: transparent;
+    }
 
   .search_number{
     color: white;
