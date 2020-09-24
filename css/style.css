@@ -369,8 +369,6 @@ input[type=password] {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  -webkit-box-shadow: 0 4px 2px -2px gray;
-          box-shadow: 0 4px 2px -2px gray;
   outline: none;
   border: none;
 }
@@ -395,18 +393,12 @@ input[type=password] {
 }
 
 .main_container-items .main_form input[type=text] {
-  width: 100%;
+  width: 95%;
   height: 50px;
   outline: none;
   border: none;
-}
-
-.main_container-items .main_form .main_search-link {
-  position: absolute;
-  height: 100%;
-  display: block;
-  color: white;
-  width: 100%;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
 }
 
 .main_container-items .main_select-container {
