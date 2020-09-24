@@ -568,10 +568,6 @@ input[type=password] {
   text-decoration: none;
 }
 
-.raiting_container-top {
-  height: 80vh;
-}
-
 .raiting_container-top .raiting_img-top {
   width: 100%;
 }
@@ -645,7 +641,6 @@ input[type=password] {
 }
 
 .rate_thumbs-container {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,7 +796,6 @@ input[type=password] {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 4px;
-  margin: 10px auto;
 }
 
 .rate_img-container .rate_img {

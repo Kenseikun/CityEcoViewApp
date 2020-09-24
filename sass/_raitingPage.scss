@@ -17,8 +17,7 @@ text-decoration: none;
 }
 
 .raiting_container-top{
- height: 80vh;
-.raiting_img-top{
+ .raiting_img-top{
     width: 100%;
  }
  .raiting_name{
@@ -81,7 +80,6 @@ text-decoration: none;
 }
 
 .rate_thumbs-container {
-margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -202,7 +200,6 @@ margin: 10px auto;
     align-items: center;
     flex-wrap: wrap;
     gap: 4px;
-    margin: 10px auto ;
    .rate_img{
        height: 120px;
        flex-wrap: 1;
