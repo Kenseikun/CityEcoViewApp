@@ -1044,6 +1044,23 @@ input[type=text] {
   }
 }
 
+@media (max-width: 375px) {
+  .section_main .main_logo {
+    height: 18vh;
+  }
+  .section_main h2 {
+    font-size: 2em;
+  }
+  .rate_img-container {
+    margin: 40px auto;
+  }
+  .rate_img-container .rate_img {
+    height: 100px;
+    -ms-flex-wrap: 1;
+        flex-wrap: 1;
+  }
+}
+
 .me_container {
   display: -webkit-box;
   display: -ms-flexbox;

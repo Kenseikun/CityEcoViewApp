@@ -22,3 +22,24 @@
         margin: 30px auto;
     }
 }
+
+@media (max-width: 375px) {
+    .section_main{
+
+        .main_logo{
+            height: 18vh;
+        }
+
+        h2{
+            font-size: 2em;
+        }
+    }
+
+    .rate_img-container{
+        margin: 40px auto;
+        .rate_img{
+            height: 100px;
+            flex-wrap: 1;
+        }
+    }
+}
