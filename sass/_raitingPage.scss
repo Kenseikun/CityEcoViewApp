@@ -2,7 +2,7 @@
     font-family: $font;
     min-height: 100vh;
     background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
-position: relative;
+    position: relative;
 }
 
 .back_btn{
@@ -69,4 +69,43 @@ text-decoration: none;
      }
     
     }
+}
+
+.rate_thumbs-container {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 6px;
+width: 80%;
+margin: 10px auto;
+
+.thumbs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: none;
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+
+    &:nth-child(1){
+        flex:1;
+        background-color: $mainCol;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    &:nth-child(2){
+        background-color: $fbCol;
+    }
+    &:nth-child(3){
+        flex:1;
+        background-color: $gmailCol;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
 }
