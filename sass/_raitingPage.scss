@@ -39,6 +39,8 @@ text-decoration: none;
     
     .rate_progress{ 
         height: 150px;
+
+        animation: rate 0.5s ease-in-out forwards;
            }
     .rate_container-score{
      font-size: 20px;
@@ -54,21 +56,24 @@ text-decoration: none;
          bottom: -8px;
          left:0;
                  
-         animation: score 0.5s ease-in-out forwards;
+         animation: score 1.2s ease-in-out forwards;
              
          
         }
         &:nth-child(1)::before{
             width: 80px;
             background-color: $mainCol;
+            animation-delay: 0.1s;
         }
         &:nth-child(2)::before{
             width: 40px;
             background-color: #DCAE1D;
+            animation-delay: 0.2s;
         }
         &:nth-child(3)::before{
             width: 10px;
             background-color: #7A9D96;
+            animation-delay: 0.4s;
         }
      }
     
@@ -161,7 +166,7 @@ margin: 10px auto;
 
     .modal_star{
     color: #DCAE1D;
-    font-size: 300px;
+    font-size: 200px;
     text-shadow: 1px 1px 2px black;
     i{
         pointer-events: none;
@@ -171,6 +176,18 @@ margin: 10px auto;
     .modal_text span{
         color: #DCAE1D;
         font-size: 60px;
+    }
+
+    .modal_textarea{
+        width: 80%;
+        padding: 10px;
+        resize: none;
+        margin-top: 10px;
+
+        &:focus{
+            outline: none;
+            border: 1px solid $mainCol;
+        }
     }
 
 }
@@ -200,6 +217,18 @@ margin: 10px auto;
 
     100%{
         transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes rate {
+    0%{
+        transform: scale(0.2);
+        opacity: 0.3;
+    }
+   
+    100% { 
+        transform: scale(1);
         opacity: 1;
     }
 }
