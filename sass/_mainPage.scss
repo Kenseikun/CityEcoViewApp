@@ -122,11 +122,18 @@ left: 0;
         }
 
         input[type=text]{
-        // text-align: center;
         width: 100%;
         height: 50px;
         outline: none;
         border: none;
+        }
+
+        .main_search-link{
+            position: absolute;
+            height: 100%;
+            display: block;
+            color: white;
+            width: 100%;
         }
     }
 

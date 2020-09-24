@@ -401,6 +401,14 @@ input[type=password] {
   border: none;
 }
 
+.main_container-items .main_form .main_search-link {
+  position: absolute;
+  height: 100%;
+  display: block;
+  color: white;
+  width: 100%;
+}
+
 .main_container-items .main_select-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
