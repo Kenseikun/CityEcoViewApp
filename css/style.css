@@ -569,6 +569,7 @@ input[type=password] {
 }
 
 .raiting_container-top .raiting_img-top {
+  height: 30vh;
   width: 100%;
 }
 
