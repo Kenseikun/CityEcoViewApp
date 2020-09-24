@@ -1,0 +1,33 @@
+.me_container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
+    font-family: $font;
+}
+
+.me_container-profile{
+    text-align: center;
+    color: white;
+    
+    .me_img{
+        margin-top: 50px;
+        height: 30vh;
+        border-radius: 50%;
+    }
+
+    .me_login{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .me_img-score{
+        height: 25vh;
+        margin: 15px auto;
+    }
+
+    .me_btn{
+        font-size: 25px;
+        margin: 5px;
+    }
+}

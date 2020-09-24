@@ -36,7 +36,7 @@ body {
 }
 
 .section_main h2 {
-  margin: 0px auto 30px auto;
+  margin: 0px auto 20px auto;
   font-size: 2.5em;
 }
 
@@ -172,7 +172,7 @@ body {
   padding: 20px 40px;
   width: 200px;
   border-radius: 5px;
-  margin: 20px auto 5px auto;
+  margin: 20px auto 10px auto;
   font-size: 20px;
   font-weight: 300;
   cursor: pointer;
@@ -486,7 +486,7 @@ input[type=password] {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main_container-items .main_menu .main_menu-options {
@@ -748,10 +748,10 @@ input[type=password] {
   border: none;
   outline: none;
   background-color: transparent;
-  font-size: 50px;
+  font-size: 40px;
   cursor: pointer;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   text-decoration: none;
   color: black;
 }
@@ -801,7 +801,7 @@ input[type=password] {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 4px;
-  margin: 10px 0 0 0;
+  margin: 10px auto;
 }
 
 .rate_img-container .rate_img {
@@ -921,10 +921,11 @@ input[type=text] {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-decoration: none;
-  padding: 3px;
+  padding: 10px;
   width: 23%;
   color: white;
   font-size: 1em;
+  margin: 10px 0 20px 0;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 80px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 80px 80px rgba(0, 0, 0, 0.12);
 }
@@ -975,6 +976,8 @@ input[type=text] {
           align-items: center;
   color: white;
   margin: 10px;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .search_place-container .search_number {
@@ -1023,5 +1026,60 @@ input[type=text] {
 
 .search_place-container .search_img-rate {
   height: 50px;
+}
+
+@media (max-width: 375px) {
+  .section_main .main_logo {
+    height: 20%;
+  }
+  .section_main h2 {
+    margin: 0px auto 20px auto;
+    font-size: 2.2em;
+  }
+  .modal .modal_star {
+    font-size: 150px;
+  }
+  .rate_img-container {
+    margin: 30px auto;
+  }
+}
+
+.me_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#466b9f), color-stop(#43628f), color-stop(#3f597f), color-stop(#3b5070), to(#374761));
+  background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
+  font-family: "Raleway", sans-serif;
+}
+
+.me_container-profile {
+  text-align: center;
+  color: white;
+}
+
+.me_container-profile .me_img {
+  margin-top: 50px;
+  height: 30vh;
+  border-radius: 50%;
+}
+
+.me_container-profile .me_login {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.me_container-profile .me_img-score {
+  height: 25vh;
+  margin: 15px auto;
+}
+
+.me_container-profile .me_btn {
+  font-size: 25px;
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */
