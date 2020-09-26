@@ -43,7 +43,7 @@
                @include iBtn;
             }
         
-        input{
+        input[type=text]{
                @include inputs;
            }
        }

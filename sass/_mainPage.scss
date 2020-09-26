@@ -7,10 +7,14 @@
 }
 
 .main_logo-image {
-    width: 30%;
+    width: 70%;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px;
 }
 
 .main_dots{
@@ -85,7 +89,7 @@ left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
     width: 100%;
 
@@ -103,6 +107,20 @@ left: 0;
         outline: none;
         border: none;
 
+        &::before {
+            content: "Location";
+            width: 20%;
+            height: 50px;
+            position: absolute;
+            right: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            text-align: center;
+        }
+
         .form_div{
          font-size: 25px;
          padding: 5px 60px;
@@ -118,6 +136,7 @@ left: 0;
          i{
             transition: 0.8s;
          }
+
         }
 
         input[type=text]{
@@ -139,11 +158,11 @@ left: 0;
     }
 
     .main_select-container{
-        flex:1; 
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         margin: 10px auto;
+        gap: 20px;
         .main_btn{
             display: flex;
             flex-direction: column;
@@ -175,17 +194,17 @@ left: 0;
         }
 
         .main_btn:nth-child(1){
-            background-color: #7A9D96;
+            background-color: #DCAE1D;
         }
 
         .main_btn:nth-child(2){
-            background-color: #DCAE1D;
+            background-color:#659EBC;
         }
         .main_btn:nth-child(3){
-            background-color: #00303F;
+            background-color: #389583;
         }
         .main_btn:nth-child(4){
-            background-color:  #CAE4DB;
+            background-color:  #1A0061;
         }
     }
 

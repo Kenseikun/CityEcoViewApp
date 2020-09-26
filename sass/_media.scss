@@ -11,6 +11,16 @@
         }
     }
 
+   
+        .main_select-container{
+
+             .main_btn{
+               width: 120px;
+               height: 120px;
+                }
+            }
+
+
     .modal{
          .modal_star{
         font-size: 150px;
@@ -19,7 +29,7 @@
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
     .section_main{
 
         .main_logo{
@@ -30,7 +40,6 @@
             font-size: 2em;
         }
     }
-
     .rate_img-container{
 
         .rate_img{

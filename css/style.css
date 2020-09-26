@@ -90,7 +90,7 @@ body {
   background-color: #15e8d3;
 }
 
-.section_main .main_form .input_container input {
+.section_main .main_form .input_container input[type=text] {
   color: gray;
   outline: none;
   border: none;
@@ -103,7 +103,7 @@ body {
   font-size: 16px;
 }
 
-.section_main .main_form .input_container input:focus {
+.section_main .main_form .input_container input[type=text]:focus {
   border-bottom: 1px solid #15e8d3;
   color: white;
 }
@@ -249,10 +249,15 @@ input[type=password] {
 }
 
 .main_logo-image {
-  width: 30%;
+  width: 70%;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
 }
 
 .main_dots {
@@ -345,7 +350,7 @@ input[type=password] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
+  height: 60vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#466b9f), color-stop(#43628f), color-stop(#3f597f), color-stop(#3b5070), to(#374761));
   background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
   width: 100%;
@@ -371,6 +376,26 @@ input[type=password] {
   position: relative;
   outline: none;
   border: none;
+}
+
+.main_container-items .main_form::before {
+  content: "Location";
+  width: 20%;
+  height: 50px;
+  position: absolute;
+  right: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  text-align: center;
 }
 
 .main_container-items .main_form .form_div {
@@ -402,17 +427,16 @@ input[type=password] {
 }
 
 .main_container-items .main_select-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px auto;
+  gap: 20px;
 }
 
 .main_container-items .main_select-container .main_btn {
@@ -449,19 +473,19 @@ input[type=password] {
 }
 
 .main_container-items .main_select-container .main_btn:nth-child(1) {
-  background-color: #7A9D96;
-}
-
-.main_container-items .main_select-container .main_btn:nth-child(2) {
   background-color: #DCAE1D;
 }
 
+.main_container-items .main_select-container .main_btn:nth-child(2) {
+  background-color: #659EBC;
+}
+
 .main_container-items .main_select-container .main_btn:nth-child(3) {
-  background-color: #00303F;
+  background-color: #389583;
 }
 
 .main_container-items .main_select-container .main_btn:nth-child(4) {
-  background-color: #CAE4DB;
+  background-color: #1A0061;
 }
 
 .main_container-items .main_menu {
@@ -856,6 +880,16 @@ input[type=password] {
   background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
 }
 
+.search_container input[type=text] {
+  text-align: center;
+  width: 60%;
+  height: 50px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
 .search_form {
   width: 100%;
   display: -webkit-box;
@@ -873,16 +907,6 @@ input[type=password] {
           justify-content: center;
   outline: none;
   border: none;
-}
-
-input[type=text] {
-  text-align: center;
-  width: 60%;
-  height: 50px;
-  outline: none;
-  border: none;
-  -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
 }
 
 .search_filter {
@@ -1042,12 +1066,16 @@ input[type=text] {
     margin: 0px auto 20px auto;
     font-size: 2.2em;
   }
+  .main_select-container .main_btn {
+    width: 120px;
+    height: 120px;
+  }
   .modal .modal_star {
     font-size: 150px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .section_main .main_logo {
     height: 18vh;
   }
