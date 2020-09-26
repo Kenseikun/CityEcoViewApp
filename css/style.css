@@ -1302,8 +1302,22 @@ input[type=password] {
 }
 
 .me_container-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: white;
+  width: 100%;
 }
 
 .me_container-profile .me_img {
@@ -1317,13 +1331,92 @@ input[type=password] {
   margin-bottom: 5px;
 }
 
-.me_container-profile .me_img-score {
-  height: 25vh;
+.me_container-profile .me_level {
+  position: relative;
+  height: 40px;
+  border-radius: 50px;
+  width: 70%;
+  background-color: #374761;
   margin: 15px auto;
 }
 
+.me_container-profile .me_level::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  background-color: #15e8d3;
+  width: 70%;
+  border-radius: 50px;
+}
+
 .me_container-profile .me_btn {
-  font-size: 25px;
+  font-size: 16px;
   margin: 5px;
+}
+
+.me_container-profile .hr {
+  width: 100%;
+  margin: 10px;
+  opacity: 0.1;
+}
+
+.me_container-profile .me_extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  gap: 8px;
+}
+
+.me_container-profile .me_extra p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.me_container-profile .me_extra .me_reviews {
+  border-bottom: 1px solid #15e8d3;
+}
+
+.me_container-profile .me_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 80%;
+  margin: 10px 0 0 0;
+}
+
+.me_container-profile .me_bottom .me_img-bottom {
+  height: 50px;
+}
+
+.me_container-profile .me_bottom .me_bottom-text {
+  font-size: 10px;
 }
 /*# sourceMappingURL=style.css.map */
