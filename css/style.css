@@ -1286,6 +1286,9 @@ input[type=password] {
     height: 110px;
     width: 110px;
   }
+  .me_container-profile .me_img {
+    height: 30vh;
+  }
 }
 
 .me_container {
@@ -1295,7 +1298,6 @@ input[type=password] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#466b9f), color-stop(#43628f), color-stop(#3f597f), color-stop(#3b5070), to(#374761));
   background-image: linear-gradient(to bottom, #466b9f, #43628f, #3f597f, #3b5070, #374761);
   font-family: "Raleway", sans-serif;
