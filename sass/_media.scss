@@ -27,6 +27,14 @@
        }
     }
 
+    .main_container-items{ 
+        .main_select-container {
+        width: 80%;
+        .main_btn{
+        height: 120px;
+        width: 120px;
+    }}}
+
 }
 
 @media (max-width: 360px) {
@@ -47,4 +55,12 @@
             flex-wrap: 1;
         }
     }
+
+    .main_container-items{ 
+        .main_select-container {
+        width: 80%;
+        .main_btn{
+        height: 110px;
+        width: 110px;
+    }}}
 }

@@ -1258,6 +1258,13 @@ input[type=password] {
   .modal .modal_star {
     font-size: 150px;
   }
+  .main_container-items .main_select-container {
+    width: 80%;
+  }
+  .main_container-items .main_select-container .main_btn {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -1271,6 +1278,13 @@ input[type=password] {
     height: 100px;
     -ms-flex-wrap: 1;
         flex-wrap: 1;
+  }
+  .main_container-items .main_select-container {
+    width: 80%;
+  }
+  .main_container-items .main_select-container .main_btn {
+    height: 110px;
+    width: 110px;
   }
 }
 
