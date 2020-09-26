@@ -744,7 +744,7 @@ input[type=password] {
           transform: translate(-50%, -50%) scale(0);
   margin: 0 auto;
   width: 90%;
-  height: 65vh;
+  height: 80vh;
   background-color: white;
   border-radius: 5px;
   font-size: 30px;
@@ -771,7 +771,7 @@ input[type=password] {
 
 .modal .modal_star {
   color: #DCAE1D;
-  font-size: 200px;
+  font-size: 120px;
   text-shadow: 1px 1px 2px black;
 }
 
@@ -796,7 +796,171 @@ input[type=password] {
   border: 1px solid #15e8d3;
 }
 
+.modal .modal_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #15e8d3;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  gap: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.modal .modal_add .modal_camera {
+  font-size: 2em;
+}
+
 .modal_active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.wrong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  margin: 0 auto;
+  width: 90%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 30px;
+  -webkit-box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.75);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.wrong .wrong_close {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  text-decoration: none;
+  color: black;
+}
+
+.wrong .wrong_star {
+  color: #DCAE1D;
+  font-size: 120px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.wrong .wrong_star i {
+  pointer-events: none;
+}
+
+.wrong .wrong_text span {
+  color: #DCAE1D;
+  font-size: 60px;
+}
+
+.wrong .wrong_textarea {
+  width: 80%;
+  padding: 10px;
+  resize: none;
+  margin-top: 10px;
+}
+
+.wrong .wrong_textarea:focus {
+  outline: none;
+  border: 1px solid #15e8d3;
+}
+
+.wrong .wrong_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #d44638;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  gap: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.wrong .wrong_add .wrong_camera {
+  font-size: 2em;
+}
+
+.wrong .wrong_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+.wrong .wrong_container .wrong_btn {
+  padding: 5px 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #d44638;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  gap: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.wrong .wrong_container .wrong_no {
+  background-color: #15e8d3;
+}
+
+.wrong_active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }

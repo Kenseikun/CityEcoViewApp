@@ -140,7 +140,7 @@ margin: 10px auto;
     transform: translate(-50%, -50%) scale(0);
     margin: 0 auto;
     width: 90%;
-    height: 65vh;
+    height: 80vh;
     background-color: white;
     border-radius: 5px;
     font-size: 30px;
@@ -165,7 +165,7 @@ margin: 10px auto;
 
     .modal_star{
     color: #DCAE1D;
-    font-size: 200px;
+    font-size: 120px;
     text-shadow: 1px 1px 2px black;
     i{
         pointer-events: none;
@@ -189,11 +189,138 @@ margin: 10px auto;
         }
     }
 
+    .modal_add{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: $mainCol;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        gap: 4px;
+        cursor: pointer;
+        margin-top: 15px;
+        .modal_camera {
+            font-size: 2em;
+        }
+    }
 }
 
 .modal_active {
     transform: translate(-50%, -50%) scale(1);
 }
+
+.wrong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin: 0 auto;
+    width: 90%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: 0px 0px 30px 8px rgba(0,0,0,0.75);
+
+    transition: 0.5s ease-in-out;
+
+
+    .wrong_close{
+        position: absolute;
+        top: 0px;
+        right:15px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 40px;
+        cursor: pointer;
+        transition: 0.8s;
+        text-decoration: none;
+        color: black;
+    }
+
+    .wrong_star{
+    color: #DCAE1D;
+    font-size: 120px;
+    text-shadow: 1px 1px 2px black;
+    i{
+        pointer-events: none;
+    }
+    }
+
+    .wrong_text span{
+        color: #DCAE1D;
+        font-size: 60px;
+    }
+
+    .wrong_textarea{
+        width: 80%;
+        padding: 10px;
+        resize: none;
+        margin-top: 10px;
+
+        &:focus{
+            outline: none;
+            border: 1px solid $mainCol;
+        }
+    }
+
+    .wrong_add{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: $gmailCol;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        gap: 4px;
+        cursor: pointer;
+        margin-top: 15px;
+        .wrong_camera {
+            font-size: 2em;
+        }
+    }
+
+    .wrong_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        font-size: 18px;
+        margin: 10px auto;
+
+        .wrong_btn{
+        padding: 5px 10px;
+        width: 50px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: $gmailCol;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        gap: 4px;
+        cursor: pointer;
+        margin-top: 15px;
+        }
+        .wrong_no {
+            background-color: $mainCol;
+        }
+    }
+}
+
+.wrong_active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
 
 .rate_img-container{
     display: flex;
