@@ -3,7 +3,7 @@
 #### link to
 https://kenseikun.github.io/CityEcoViewApp/
 
-## CLICK LOGIN WITHOUT REGISTRY
+## CLICK LOGIN WITHOUT REGISTRATION
 
 
 <img src="images/mockup.jpg" height="300">
