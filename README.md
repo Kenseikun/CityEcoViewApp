@@ -1,6 +1,5 @@
 # CityEcoViewApp
 
-link to:
 #### link to
 https://kenseikun.github.io/CityEcoViewApp/
 
